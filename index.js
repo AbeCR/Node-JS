@@ -181,14 +181,41 @@
 
 // showProperties(movie);
 
-console.log(sum(10));
+// console.log(sum(10));
 
-function sum(limit) {
-    let sum = 0;
+// function sum(limit) {
+//     let sum = 0;
 
-    for (let i = 0; i <= limit; i++)
-        if (i % 3 === 0 || i % 5 === 0)
-            sum += i;
+//     for (let i = 0; i <= limit; i++)
+//         if (i % 3 === 0 || i % 5 === 0)
+//             sum += i;
 
-    return sum;
-}
+//     return sum;
+// }
+
+// showStars(10);
+
+// function showStars(rows){
+//     for (let row = 0; row <= rows; row++) {
+//         let pattern = '';
+//         for (let i = 0; i <= row; i++)
+//             pattern += "*";
+//         console.log(pattern);
+//     }
+// }
+
+// showPrimes(20);
+
+// function showPrimes (limit) {
+//     for (let number = 2; number <= limit; number++){
+//         if (showFactor(number)) console.log(number);
+//     }
+// }
+
+// function showFactor(number){
+//     for (let factor = 2; factor < number; factor++)
+//         if (number % factor === 0)
+//             return false;
+//     return true;
+// }
+
