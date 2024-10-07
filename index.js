@@ -281,3 +281,104 @@
 // console.log(numbers.includes(1));
 
 
+// const numbers = arrayFromRange(5,10);
+
+// console.log(numbers);
+
+// function arrayFromRange(min,max){
+//     const output = [];
+//     for (let i = min; i <= max; i++)
+//         output.push(i);
+//     return output;
+// }
+
+
+// const number = [1,2,3,4];
+
+// console.log(includes(number, 2));
+
+// function includes(array, searchElement){
+//     for (let key of array) 
+//         if (searchElement === key) 
+//             return true;
+//     return false;
+// }
+
+// const numbers = [1,2,3,4];
+
+// const output = except(numbers, [1,2]);
+// console.log(output);
+
+// function except(array, excluded) {
+//     const output = [];
+//     for (let key of array)
+//         if (!excluded.includes(key))
+//             output.push(key);
+//     return output;   
+// }
+
+// const numbers =  [1,2,3,4,5];
+
+// const output = move (numbers, 0, 3);
+
+// console.log(output);
+
+// function move (array, index, offset) {
+//     const position = index + offset;
+//     if (position >= array.lenght || position < 0) {
+//         console.error('Invalid Offset.');
+//         return;
+//     }
+//     const output = [...array];
+//     const element = output.splice(index, 1)[0];
+//     output.splice(position, 0, element);
+//     return output;
+// }
+
+// const numbers = [1,2,3,4,5,1,2,1,1,1,1];
+
+// const count = countOcurrences(numbers, 1);
+// console.log(count);
+
+// function countOcurrences(array, searchElement){
+//     // let count = 0;
+//     // for (let key of array)
+//     //     if (searchElement === key)
+//     //         count++;
+//     // return count;
+// }
+
+
+// const numbers = [25,35,16,47,52];
+
+// const max = getMax([1,2,3,4,5,87,56]);
+// console.log(max);
+
+// function getMax(array){
+//     let max = array[0];
+//     for (let i = 1; i < array.length; i++)
+//         if (array[i]>max)
+//             max = array[i];
+//     return max;
+// }
+
+// const max = getMax([1,2,3,4,5,87,56]);
+// console.log(max);
+
+// function getMax(array){
+//     return array.reduce((a,b) => (a>b) ? a : b);
+// }
+
+const movies = [
+    {title: 'a', year: 2018, rating: 4.5 },
+    {title: 'b', year: 2018, rating: 4.5 },
+    {title: 'c', year: 2018, rating: 3 },
+    {title: 'd', year: 2017, rating: 4.5 },
+];
+
+const titles = movies
+    .filter(m => m.year === 2018 && m.rating >=4)
+    .sort((a, b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
+console.log(titles);
