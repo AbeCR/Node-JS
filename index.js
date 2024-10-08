@@ -406,3 +406,9 @@
 // }
 
 // console.log(sum(0.1, 20, 30));
+
+
+
+
+// TypeScript 0.0 Class
+
